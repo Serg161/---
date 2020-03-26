@@ -6,37 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Каталог</title>
-  <link rel="stylesheet" href="../style.css">
   <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
-  <p class="logo"><span class="logo_first">Т</span>АПАТА</p>
-  <ul class="menu">
-    <li class="menu-list"><a href="../index.html">Главная</a></li>
-    <li class="menu-list"><a href="#">Каталог</a></li>
-    <li class="menu-list"><a href="../contacts.html">Контакты</a></li>
-  </ul>
+  <div class="conteiner">
+    <div class="header">
+      <p class="logo"><span class="logo_first">Т</span><span class="logo-text">АПАТА</span></p>
+      <ul class="menu">
+        <li class="menu-list"><a href="../index.html" class="link-menu-list">Главная</a></li>
+        <li class="menu-list"><a href="#" class="link-menu-list menu-list-active">Каталог</a></li>
+        <li class="menu-list"><a href="../contacts.html" class="link-menu-list">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
   <hr>
-  <h1>Каталог детской обуви</h1>
+  <div class="conteiner">
 
-  <div class="catalog">
-    <figure>
-      <a href="BabyGo.html"><img width="200" src="../img/BabyGo.jpg" alt="Ботинки BabyGo песочные"></a>
-      <figcaption><a href="BabyGo.html">Ботинки BabyGo песочные</a></figcaption>
-    </figure>
-    <figure>
-      <a href="Greyhound.html"><img width="200" src="../img/Greyhound.jpg" alt="Ботинки Greyhound с подсветкой"></a>
-      <figcaption><a href="Greyhound.html">Ботинки Greyhound с&nbsp;подсветкой</a></figcaption>
-    </figure>
-    <figure>
-      <a href="Run.html"><img width="200" src="../img/Run.jpg" alt="Ботинки Run серые"></a>
-      <figcaption><a href="Run.html">Ботинки Run серые</a></figcaption>
-    </figure>
+    <h1 class="promo-title">Каталог детской обуви</h1>
+
+    <div class="catalog">
+      <figure>
+        <a href="BabyGo.html"><img width="200" src="../img/BabyGo.jpg" alt="Ботинки BabyGo песочные"></a>
+        <figcaption><a href="BabyGo.html" class="catalog-link">Ботинки BabyGo песочные</a></figcaption>
+      </figure>
+      <figure>
+        <a href="Greyhound.html"><img width="200" src="../img/Greyhound.jpg" alt="Ботинки Greyhound с подсветкой"></a>
+        <figcaption><a href="Greyhound.html" class="catalog-link">Ботинки Greyhound с&nbsp;подсветкой</a></figcaption>
+      </figure>
+      <figure>
+        <a href="Run.html"><img width="200" src="../img/Run.jpg" alt="Ботинки Run серые"></a>
+        <figcaption><a href="Run.html" class="catalog-link">Ботинки Run серые</a></figcaption>
+      </figure>
+    </div>
   </div>
 
   <hr>
-  <p>Все права защищены &copy;&nbsp;2020г</p>
+  <p class="footer">Все права защищены &copy;&nbsp;2020г</p>
+
   <script src="../mine.js"></script>
 </body>
 

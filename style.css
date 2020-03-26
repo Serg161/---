@@ -1,8 +1,94 @@
+/* ОБЩИЕ СТИЛИ САЙТА*/
 body {
+  width: 100%;
   margin: 0 auto;
   padding: 0;
+  font-family: 'Arial Narrow Bold', sans-serif;
+  background-color: #f8f8f8;
 }
 
+.conteiner {
+  max-width: 1140px;
+  margin: auto;
+}
+
+
+/* ОБЩИЕ СТИЛИ ДЛ ШАПКИ */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  color: #33CCCC;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 50px;
+}
+
+.logo_first {
+  font-size: 60px;
+  line-height: 60px;
+  color: #FF9640;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* Стили для списка */
+.menu {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* Стили для меню навигации */
+.menu-list {
+  display: inline-block;
+  font-size: 24px;
+  margin-right: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.link-menu-list {
+  color: #33CCCC;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.link-menu-list:hover {
+  color: rgb(40, 156, 66);
+  text-decoration: underline;
+}
+
+.menu-list-active {
+  pointer-events: none;
+  color: #FF9640;
+}
+
+/* СТИЛИ ДЛЯ ПОДВАЛА */
+.footer {
+  text-align: center;
+}
+
+/* СТИЛИ ДЛЯ ГЛАВНОЙ */
+
+/* Название интернет-магазина */
+.promo-title {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #33CCCC;
+  font-size: 36px;
+}
+
+/* Приветственный текст */
 .promo {
   text-align: center;
   font-size: 30px;
@@ -10,50 +96,167 @@ body {
   color: #FF9640;
 }
 
-.menu {
-  display: inline-block;
-  margin-bottom: 0;
-  margin-top: 0;
-  
+/* Картинка на главной */
+.promo-img-block {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  overflow: hidden;
 }
 
-.menu-list {
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-
-.logo_first {
-  font-size: 60px;
-  color: #FF9640;
-  font-family: 'Pacifico', cursive;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-.promo-title {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: #33CCCC;
-  font-size: 36px;
-}
-
-.promo-img {
+/* СТИЛИ ДЛЯ КАТАЛОЛГА */
+.catalog {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   text-align: center;
 }
 
-.catalog {
-display: flex;
-justify-content: space-between;
-align-items: baseline;
-text-align: center;
+.catalog-link {
+  font-size: 18px;
+  color: #33CCCC;
+  list-style-type: none;
+  text-decoration: none;
 }
 
-.logo {
-  display: inline-block;
-  font-size: 30px;
-  color: #33CCCC;
-  margin-bottom: 0;
-  margin-top: 0;
+.catalog-link:hover {
+  color: rgb(40, 156, 66);
+  text-decoration: underline;
 }
+
+/* СТИЛИ ДЛЯ КОНТАКТОВ */
+.contacts {
+  text-align: center;
+}
+
+
+/* СТИЛИ ДЛ ТОВАРОВ */
+.prise {
+  color: #FF9640;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.catalog-title {
+  font-size: 24px;
+  color: #33CCCC;
+  font-family: 'Lobster', cursive;
+}
+
+.catalog-title-small {
+  font-size: 20px;
+  color: #33CCCC;
+  font-family: 'Lobster', cursive;
+}
+
+.recommended {
+  font-size: 16px;
+  color: #33CCCC;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.recommended:hover {
+  color: rgb(40, 156, 66);
+  text-decoration: underline;
+}
+
+.description {
+  margin-left: 50px;
+}
+
+.size {
+  font-family: 'Lobster', cursive;
+  font-size: 16px;
+  color: #FF9640;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 1000px) {
+  .conteiner {
+    margin: 15px auto;
+  }
+
+  .promo {
+    text-align: center;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #FF9640;
+  }
+
+  .promo-title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #33CCCC;
+    font-size: 31px;
+  }
+
+  .promo-img {
+    max-width: 90%;
+  }
+
+  .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 860px) {
+  .conteiner {
+    margin: 15px auto;
+  }
+
+  .promo {
+    text-align: center;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #FF9640;
+  }
+
+  .promo-title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #33CCCC;
+    font-size: 26px;
+  }
+
+  .promo-img {
+    max-width: 78%;
+  }
+
+}
+
+@media (max-width: 420px) {
+  .conteiner {
+    margin: 10px auto;
+  }
+
+  .promo {
+    text-align: center;
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #FF9640;
+
+  }
+
+  .promo-title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #33CCCC;
+    font-size: 21px;
+  }
+
+  .promo-img {
+    max-width: 70%;
+  }
+
+} */
